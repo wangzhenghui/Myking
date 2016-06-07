@@ -12,12 +12,14 @@ import android.widget.ListView;
  * Created by Administrator on 2016/5/27.
  */
 public class BaesActvity2 extends BaseActivity {
-    String[] str = {"Hello World","图片","分辨率","循环图片","画心","布局1","布局2","布局3","QQ登录页面","霓虹灯闪烁","计算器","单选多选","获取验证码","QQ分组","选择你会的语言","自动播放图片","幻灯片","图片透明度",
-    "GridView2列显示图片","下拉选择","ListView列显示","Fals动画","搜索框","选项卡","星评分RatingBar","进度条显示进度","ExpandListView城市选择","选择生日","下载文件","回主页面和百度","小球游戏"};
+    String[] str = {"Hello World","分辨率","循环图片","画心","布局1","布局2","布局3","QQ登录页面","霓虹灯闪烁","计算器","单选多选","获取验证码","QQ分组","选择你会的语言","自动播放图片","幻灯片","图片透明度",
+    "GridView2列显示图片","下拉选择","ListView列显示","Fals动画","搜索框","选项卡","星评分RatingBar","进度条显示进度","ExpandListView城市选择","选择生日","下载文件","回主页面和百度","小球游戏",
+    "SQLite查询信息","图片缩放","手势保存","手势识别","百度语音朗读TTS","学生信息增删改"};
     ListView lv;
-    Class[] clazz = {MainActivity.class,MainActivity.class,MainActivity.class,Ex06Activity.class,MainMyView.class,Ex09Activity.class,Ex10Activity.class,Ex12Activity.class,QQindex.class,Ex11Activity.class,Jisuanqi.class,
+    Class[] clazz = {MainActivity.class,Ex2Activity.class,Ex06Activity.class,MainMyView.class,Ex09Activity.class,Ex10Activity.class,Ex12Activity.class,QQindex.class,Ex11Activity.class,Jisuanqi.class,
     Ex04Activity.class,Ex14Activity.class,Ex15Activity.class,Ex05Activity.class,Ex16Activity.class,Ex17Activity.class,Ex13Activity.class,Ex19Activity.class,Ex18Activity.class,Ex20Activity.class,
-    Ex21Activity.class,Ex07Activity.class,Ex22Activity.class,Ex02Activity.class,Ex23Activity.class,Ex24Activity.class,Ex25Activity.class,Ex26Activity.class,Ex27Activity.class,pinBall.class};
+    Ex21Activity.class,Ex07Activity.class,Ex22Activity.class,Ex02Activity.class,Ex23Activity.class,Ex24Activity.class,Ex25Activity.class,Ex26Activity.class,Ex27Activity.class,pinBall.class,
+    Ex28Activity.class,Ex29Activity.class,Ex30Activity.class,Ex30Activity3.class,Ex31Activity.class,MainActivity4.class};
    @Override
     protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.base_layout);

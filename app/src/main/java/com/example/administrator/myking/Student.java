@@ -2,14 +2,19 @@ package com.example.administrator.myking;
 
 import java.io.Serializable;
 
-/**
- * Created by 果占先 on 2016/5/11.
- */
+
 public class Student implements Serializable{
+    private int _id;
     private int pic;
     private String name;
     private int age;
+    public int get_id() {
+        return _id;
+    }
 
+    public void set_id(int _id) {
+        this._id = _id;
+    }
     public int getPic() {
         return pic;
     }

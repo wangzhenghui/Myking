@@ -39,6 +39,10 @@ public abstract class BaseActivity extends AppCompatActivity {
                         ad.setMessage("《王正辉》");
                         ad.create().show();
                         break;
+                    case R.id.normal_btnten:
+                        Intent intent = new Intent(BaseActivity.this,Ex32Activity.class);
+                        startActivity(intent);
+                        break;
                 }
                 return false;
             }

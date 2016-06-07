@@ -11,4 +11,5 @@
     </item>
 
     <item android:id="@+id/normal_btn" android:title="关于" android:showAsAction="never"/>
+    <item android:id="@+id/normal_btnten" android:title="手机设置" android:showAsAction="never"/>
 </menu>

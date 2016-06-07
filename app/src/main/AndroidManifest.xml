@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.myking">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
@@ -15,6 +18,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex01Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex2Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex02Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex03Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex04Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
@@ -49,13 +53,24 @@
         <activity android:name=".Ex25Activity2" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex26Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex27Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex28Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".pinBall"></activity>
+        <activity android:name=".Ex29Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex30Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex30Activity3" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex31Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex32Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MainActivity4"></activity>
        <activity android:name=".BaesActvity2" android:theme="@style/AppTheme.NoActionBar" android:launchMode="singleTop">
            <intent-filter>
                <action android:name="android.intent.action.MAIN" />
                <category android:name="android.intent.category.LAUNCHER" />
            </intent-filter>
-       </activity>
+       </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
     </application>
 
