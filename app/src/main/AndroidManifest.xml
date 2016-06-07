@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myking">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex01Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex02Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex03Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex04Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex05Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex06Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".QQindex" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Jisuanqi" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".TupianView" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex08xiaohua" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex07Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".GameMainActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MainMyView" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex09Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex10Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex11Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex12Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex13Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex14Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex15Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex16Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex17Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex18Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex19Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex20Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex20Activity2" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex21Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex22Activity"></activity>
+        <activity android:name=".Ex23Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex24Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex24Activity2" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex25Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex25Activity2" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex26Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex27Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".pinBall"></activity>
+       <activity android:name=".BaesActvity2" android:theme="@style/AppTheme.NoActionBar" android:launchMode="singleTop">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+       </activity>
+
+    </application>
+
+</manifest>

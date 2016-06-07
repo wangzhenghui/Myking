@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tools_bar"/>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性別"
+            android:textColor="#aa134ad6"
+            android:textSize="60dp"/>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+        <RadioButton
+            android:id="@+id/nan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textColor="#890cef"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/nv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="喜欢的运动"
+            android:textColor="#aa134ad6"
+            android:textSize="30dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/lq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="篮球"
+                android:checked="true"/>
+            <CheckBox
+                android:id="@+id/yy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游泳" />
+            <CheckBox
+                android:id="@+id/zq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="足球"/>
+            <CheckBox
+                android:id="@+id/dc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单车"/>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tools_bar"/>
+
+    <TextView
+        android:id="@+id/corlo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="310dp"
+        android:height="410dp"
+        android:background="#990000"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/corlo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="280dp"
+        android:height="380dp"
+        android:background="#ff0000"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/corlo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="240dp"
+        android:height="340dp"
+        android:background="#770000"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/corlo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="200dp"
+        android:height="300dp"
+        android:background="#000000"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/corlo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="160dp"
+        android:height="260dp"
+        android:background="#1fb647"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/corlo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:height="200dp"
+        android:background="#812097"
+        android:layout_gravity="center"/>
+</FrameLayout>
