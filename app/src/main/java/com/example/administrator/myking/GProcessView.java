@@ -35,7 +35,7 @@ public GProcessView(GPanlewarActivity1 activity, int type, int screenwidth, int 
        this.scren_width=screenwidth;
        this.scren_heigt=screenheight;
        
-		paint.setTextSize(12);//设置字体大小
+		paint.setTextSize(18);//设置字体大小
 		process = BitmapFactory.decodeResource(getResources(), R.drawable.process);
 		processbackground = BitmapFactory.decodeResource(getResources(), R.drawable.background_prg);
 		this.startx=scren_width/2-process.getWidth()/2;

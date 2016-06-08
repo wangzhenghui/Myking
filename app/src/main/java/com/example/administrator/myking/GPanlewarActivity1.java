@@ -118,7 +118,7 @@ public class GPanlewarActivity1 extends Activity {
 		
 		processview = new GProcessView(this, 1, screenwidth, screenheight);
 		this.setContentView(processview);
-		mSQLiteDatabase = this.openOrCreateDatabase("cengji.db", MODE_PRIVATE, null);
+		mSQLiteDatabase = this.openOrCreateDatabase("chengji.db", MODE_PRIVATE, null);
 		try{
 			mSQLiteDatabase.execSQL(sql);
 		}catch(Exception e){

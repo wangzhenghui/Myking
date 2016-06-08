@@ -19,7 +19,7 @@ public class GHelpView extends SurfaceView implements SurfaceHolder.Callback {
 	private TutorialThread thread;//刷帧的线程
 	Paint paint;
 	Bitmap background3;
-	int width=768,height=900;
+	int width=768,height=1280;
 	Bitmap ok;
 	Cursor cur;
 	String[] name={"","","","",""};
@@ -47,7 +47,7 @@ public class GHelpView extends SurfaceView implements SurfaceHolder.Callback {
 		Rect rect1 = new Rect(0,0,background3.getWidth(),background3.getHeight());
 		Rect rect2 = new Rect(0,0,width,height);
 		canvas.drawBitmap(background3,rect1,rect2, null);
-        paint.setTextSize(20);
+        paint.setTextSize(30);
         paint.setColor(Color.BLUE);
 	    canvas.drawText("英雄排行榜", width*2/5, height/20, paint);
 	    canvas.drawText("战斗名次", width/4, height/10, paint);
@@ -127,7 +127,7 @@ public class GHelpView extends SurfaceView implements SurfaceHolder.Callback {
 	public boolean onTouchEvent(MotionEvent event) {//屏幕监听
 		if(event.getAction() == MotionEvent.ACTION_DOWN){
 			if(event.getX()>width/2-ok.getWidth()/2 && event.getX()<width/2-ok.getWidth()/2+ok.getWidth()
-					&& event.getY()>height*7/10 && event.getY()<height*7/10+ok.getHeight()){//点击了确定按钮
+					&& event.getY()>height*6/10 && event.getY()<height*6/10+ok.getHeight()){//点击了确定按钮
 				send();
 				 
 			

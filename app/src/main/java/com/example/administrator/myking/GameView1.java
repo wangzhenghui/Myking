@@ -113,15 +113,15 @@ public class GameView1 extends SurfaceView implements Callback,
 		mMediaPlayer = MediaPlayer.create(activity, R.raw.gamestart);
 		mMediaPlayer.setLooping(true);
 		ene = BitmapFactory.decodeResource(GameView1.this.getResources(),
-				R.drawable.myplane);
+				R.drawable.airplane1);
 		bulle = BitmapFactory.decodeResource(this.getResources(),
-				R.drawable.bullet2);
+				R.drawable.bullet_05);
 		background4 = BitmapFactory.decodeResource(this.getResources(),
 				R.drawable.back);
 		bull = BitmapFactory.decodeResource(this.getResources(),
-				R.drawable.bullet);
+				R.drawable.bullet_04);
 		player = BitmapFactory.decodeResource(this.getResources(),
-				R.drawable.airplane);
+				R.drawable.plane);
 		jiguangpt=BitmapFactory.decodeResource(this.getResources(),R.drawable.jiguang);
 		xuetiao=BitmapFactory.decodeResource(this.getResources(),R.drawable.xuetiao);
 	//	explosion = BitmapFactory.decodeResource(this.getResources(),
@@ -177,7 +177,7 @@ public class GameView1 extends SurfaceView implements Callback,
 
 				if (shoot % 40 == 0) {
 
-					GBullet1 bull = new GBullet1(ene.x + 9, ene.y + 31, bulle, time,this);
+					GBullet1 bull = new GBullet1(ene.x + 20, ene.y + 30, bulle, time,this);
 					ebullets.add(bull);
 				}
 				if (ene.y < height) {
@@ -207,7 +207,7 @@ public class GameView1 extends SurfaceView implements Callback,
 				} else {
 					ebullets.remove(bull);
 				}
-				if (ebullx > x+10 & ebullx< x + ene.getWidth()+10
+				if (ebullx > x+15 & ebullx< x + ene.getWidth()+15
 						& ebully > y  & ebully< y + ene.getHeight()
 				//		|(ebullx>x+10*ene.getWidth()/46&ebullx<x+36*ene.getWidth()/46&
 					//	ebully>y+20*ene.getHeight()/47&ebully<y+34*ene.getHeight()/47)
@@ -215,7 +215,7 @@ public class GameView1 extends SurfaceView implements Callback,
 					ebullets.remove(bull);
 
 					ilife--;
-					GExplosion explo = new GExplosion(x+9,y+9,explodes);
+					GExplosion explo = new GExplosion(x+15,y+15,explodes);
 					 explosions.add(explo);
 					 if(isSound){
 					 playSound(2,0);
@@ -241,8 +241,8 @@ public class GameView1 extends SurfaceView implements Callback,
 					GEnamy eneb = enemys.get(k);
 					float enemyx = eneb.x;
 					float enemyy = eneb.y;
-					if (bullx < (enemyx + 100) & (bullx + 11) > enemyx
-							& bully < (enemyy + 100) & (bully + 11 > enemyy)) {
+					if (bullx < (enemyx + 100) & (bullx + 15) > enemyx
+							& bully < (enemyy + 100) & (bully + 15 > enemyy)) {
 						score += 100;
 						enemys.remove(eneb);
 						bullets.remove(bul);
@@ -354,10 +354,10 @@ public class GameView1 extends SurfaceView implements Callback,
 			paint.setColor(Color.RED);
             paint.setTextSize(20);
 			canvas.drawText("炸弹:" + bomb, 0, 50, paint);
-			canvas.drawText("分数:" + score,width*3/5, 50, paint);
+			canvas.drawText("分数:" + score,0, 100, paint);
 			canvas.drawText("血量:", width/3, 50, paint);
 			canvas.drawText("激光弹"+jiguang, width/3, 100, paint);
-			canvas.drawBitmap(xuetiao,width/3+50,40, paint);
+			canvas.drawBitmap(xuetiao,width/3+40,40, paint);
 			paint.setColor(Color.BLUE);
 			canvas.drawRect(width/3+50,40,width/3+50+ilife*xuetiao.getWidth()/3,
 					40+xuetiao.getHeight(),paint);
@@ -507,7 +507,7 @@ public void baozha(){
 				  tm1=System.currentTimeMillis();
 				while (flag) {
 					int i = r.nextInt(9);
-              int shui=1000;
+					int shui=1000;
             
 					if (i == 0) {
 						enemy = new GEnamy(player.getWidth()/2-ene.getWidth()/2, 0, ene, GameView1.this);
