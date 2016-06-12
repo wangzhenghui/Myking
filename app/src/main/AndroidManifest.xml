@@ -75,6 +75,8 @@
         <activity android:name=".Ex36Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex37Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Ex38Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex39Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Ex40Activity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".MainActivity4"></activity>
         <activity android:name=".GPanlewarActivity1" android:label="@string/app_name"></activity>
         <activity android:name=".BaesActvity2" android:theme="@style/AppTheme.NoActionBar" android:launchMode="singleTop">
