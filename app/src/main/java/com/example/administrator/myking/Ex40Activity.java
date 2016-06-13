@@ -26,23 +26,23 @@ public class Ex40Activity extends BaseActivity {
     EditText _id;
     EditText sname;
     EditText sbirth;
-    EditText fileName;
-    Button btu;
+    EditText filetu;
+    //Button btu;
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         setContentView(R.layout.ex40_layout);
         _id = (EditText) findViewById(R.id._id);
         sname = (EditText) findViewById(R.id.sname);
         sbirth = (EditText) findViewById(R.id.sbirth);
-        fileName = (EditText) findViewById(R.id.fileName);
-        fileName.setOnClickListener(new View.OnClickListener() {
+        filetu = (EditText) findViewById(R.id.fileName);
+        filetu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Ex40Activity.this,Ex40ActivityImg.class);
                 startActivityForResult(i,0);
             }
         });
-        btu = (Button) findViewById(R.id.btntt);
+       // btu = (Button) findViewById(R.id.btntt);
     }
     public void btn5(View view) {
         Retrofit retrofit = new Retrofit.Builder()
@@ -50,7 +50,7 @@ public class Ex40Activity extends BaseActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         Ex40StudentService upSInfo = retrofit.create(Ex40StudentService.class);
-        File file = new File(fileName.getText().toString());
+        File file = new File(filetu.getText().toString());
         RequestBody requestBody = RequestBody.create(MediaType.parse("multipart/form-data"), file);
         Call<Message> call = upSInfo.uploadStudentInfo(_id.getText().toString(),sname.getText().toString(),sbirth.getText().toString(),file.getName(),requestBody);
         call.enqueue(new Callback<Message>() {
@@ -73,7 +73,7 @@ public class Ex40Activity extends BaseActivity {
         {
             String brith = data.getStringExtra("brith");
            // Log.e("23",brith);
-            fileName.setText(brith);
+            filetu.setText(brith);
         }
     }
 }
